@@ -1,0 +1,20 @@
+---
+Language: Cpp
+Standard: Cpp11
+
+BasedOnStyle: Google
+
+SortIncludes: Never
+InsertBraces: true
+AllowShortFunctionsOnASingleLine: None
+SeparateDefinitionBlocks: Always
+
+BreakBeforeInheritanceComma: true
+BreakInheritanceList: BeforeComma
+SpaceBeforeInheritanceColon: false
+
+BreakConstructorInitializersBeforeComma: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+
+ColumnLimit: 160
+...

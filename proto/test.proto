@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+package test;
+
+extend google.protobuf.FieldOptions {
+  string field_option = 50000;
+}
+
+extend google.protobuf.MessageOptions {
+  string message_option = 50001;
+}
+
+message Test {
+  option (message_option) = "Message Test";
+
+  string a = 1 [(field_option) = "Field a"];
+
+  int32 b = 2 [(field_option) = "Field b"];
+
+  string c = 3;
+}
